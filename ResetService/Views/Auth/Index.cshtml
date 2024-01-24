@@ -1,0 +1,47 @@
+﻿@model ResetService.Models.ViewModels.UserRegisterVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-controller="Auth" asp-action="Index" method="post" class="row g-3">
+    <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">Ad </label>
+        <input type="text" class="form-control" id="inputFirstName" name="Name" value="Alekta">
+
+        <label for="inputLastName" class="form-label">Soyad </label>
+        <input type="text" class="form-control" id="inputLastName" name="Surname" value="Movit">
+
+        <label for="Username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="Username" name="Username" value="Mundarettin">
+
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="text" class="form-control" id="inputEmail" name="Mail" placeholder="Email" value="user@user.com">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" name="Password" value="Password12*">
+
+        <label for="inputConfirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="inputConfirmPassword" name="ConfirmPassword" value="Password12*">
+
+        <label for="inputTc" class="form-label">TC No :</label>
+        <input type="text" class="form-control" id="inputTc" name="TcNo" placeholder="TC Kimlik No" value="123456789123">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" name="DefaultCity" value="Adana">
+    </div>
+
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
